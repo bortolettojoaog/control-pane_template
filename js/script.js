@@ -1,4 +1,16 @@
 $(function() {
+    setInterval(() => {
+        $.ajax({
+            method: 'post',
+            url: 'date.php',
+            data: {'date':'', 'action':'changeDate'},
+            dataType: 'json'
+        }).done(function(data) {
+            $('#date').text(data.date);
+        });
+    }, 1000);
+
+
     var opened = true;
 
     $('#button-menu').on('click', function() {

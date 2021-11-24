@@ -216,18 +216,6 @@
 		<!--Externos-->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="js/script.js"></script>
-        <script>
-            setInterval(() => {
-                $.ajax({
-                    method: 'post',
-                    url: 'date.php',
-                    data: {'date':'', 'action':'changeDate'},
-                    dataType: 'json'
-                }).done(function(data) {
-                    $('#date').text(data.date);
-                });
-            }, 1000);
-        </script>
 		<!------------>
 
 	</body>
