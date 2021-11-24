@@ -78,7 +78,7 @@
                         <div class="welcome">
                             <h2>Welcome, <b>USER</b>!</h2>
                             <p>I wish you will have a great day at work today. Don't forget to check the dashboard information!</p>
-                            <p><b>Date:</b> <span id="date"></span></p>
+                            <p><b>Date:</b> <span id="date"><?php echo 'carregando data...' ?></span></p>
                         </div><!--welcome-->
 
                         <div id="one" style="width: 100%;" class="box">
